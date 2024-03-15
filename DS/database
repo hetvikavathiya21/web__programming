@@ -1,0 +1,40 @@
+pip install mysql-connection
+
+import mysql.connector
+
+cn=mysql.connector.connect(host="localhost",user="root",password="",database="student")
+c1=cn.cursor()
+
+q1="create table personal(rno int,name varchar(20))";
+c1.execute(q1)
+cn.cursor()
+
+q2="insert into personal(1,'Dharmi')";
+c1.execute(q2)
+cn.commit()
+
+q3="select * from personal";
+c1.execute(q3)
+table=c1.fetchall()
+for i in table:
+    print(i)
+
+q4="update personalset sname = 'Hello' where sname='Happy'
+c1.execute(q4)
+cn.commit
+
+q5="delete from personal where sname='Hello'
+c1.execute(q5)
+cn.commit
+
+q6="alter table personal add(city varchar(20))"
+c1.execute(q6)
+cn.commit
+
+q7="truncate table personal"
+c1.execute(q7)
+cn.commit()
+
+q8="drop table personal"
+c1.execute(q8)
+cn.commit

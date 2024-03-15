@@ -1,0 +1,33 @@
+//write given text in file
+f=open("D:\\SEM-4\\DS\\Dharmi.txt","w");
+f.write("Hello..\nDholu Dharmi");
+f.close();
+
+//read all data
+f=open("D:\\SEM-4\\DS\\Dharmi.txt","r");
+if f:
+    print(f.read())
+    f.close()
+print("\n")
+
+//read 1st 10 characters
+f=open("D:\\SEM-4\\DS\\Dharmi.txt","r");
+if f:
+    print(f.read(10))
+    f.seek(0)
+    f.close()
+print("\n")
+
+//read a line
+f=open("D:\\SEM-4\\DS\\Dharmi.txt","r");
+if f:
+    print(f.readline())
+    f.close()
+print("\n")
+
+//print current position of cursor
+f=open("D:\\SEM-4\\DS\\Dharmi.txt","r");
+if f:
+    print(f.tell())
+    f.close()
+

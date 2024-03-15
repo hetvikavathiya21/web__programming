@@ -1,0 +1,33 @@
+pip install matplotlib
+//line graph
+import matplotlib.pyplot as plt
+age_stud=['0-10','10-20','20-30','30-40','40-50']
+marks=[10,40,45,80,30]
+plt.title("Line Graph")
+plt.plot(age_stud,marks)
+plt.xlabel("age_stud")
+plt.ylabel("marks")
+plt.show()
+
+//bar graph
+import matplotlib.pyplot as plt
+age_stud=['0-10','10-20','20-30','30-40','40-50']
+marks=[10,40,45,80,30]
+colors=["red","green","blue","magenta","pink"]
+plt.title("Bar Graph")
+plt.bar(age_stud,marks,color=colors)
+plt.xlabel("age_stud")
+plt.ylabel("marks")
+plt.show()
+
+//scatter graph
+import matplotlib.pyplot as plt
+age_stud=['0-10','10-20','20-30','30-40','40-50']
+marks=[10,40,45,80,30]
+colors=["red","green","blue","magenta","pink"]
+plt.title("Scatter Graph")
+plt.scatter(age_stud,marks,color=colors)
+plt.xlabel("age_stud")
+plt.ylabel("marks")
+plt.show()
+
